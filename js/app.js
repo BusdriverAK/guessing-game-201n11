@@ -1,9 +1,6 @@
 'use strict';
 
-// variable to hold correct answer increment
 var answerCount = 0;
-
-//get user's name
 
 confirm('Are you ready to play a guessing game about me?');
 
@@ -26,6 +23,7 @@ if(fromSeattle === 'no'){
 var visitCount = prompt('Have I visited more than 10 countries?').toLowerCase();
 if(visitCount === 'yes'){
   alert('That\'s right! I have been to more than 10 countries!');
+  answerCount++;
 } else if(visitCount === 'no'){
   alert('Sorry, I\'ve been there and back again');
 } else{
@@ -33,9 +31,34 @@ if(visitCount === 'yes'){
 }
 
 var artistCount = prompt('Have I seen over 100 artists in a single year?').toLowerCase();
+if(artistCount === 'yes'){
+  alert('Nice job! I have seen over 100 artists in a year, and what a year it was!');
+  answerCount++;
+} else if(artistCount === 'no'){
+  alert('Nope. Had one crazy year of concerts!');
+} else{
+  alert('I thought 3rd time would be the charm. Try yes or no next time.');
+}
 
 var ewwCelery = prompt('Is celery my favorite food?').toLowerCase();
+if(ewwCelery === 'no'){
+  alert('Absolutely. I would never torture myself eating celery!');
+  answerCount++;
+} else if (ewwCelery === 'yes'){
+  alert('Trick question celery isn\'t real food.');
+} else{
+  alert('Are you even trying? Yes or no are better answers.');
+}
 
-var spectatorSports = ['soccer', 'baseball', 'hockey', 'football', 'esports'];
+var favDrink = prompt('Is coffee my favorite (non-alcoholic) beverage?');
+if(favDrink === 'yes'){
+  alert('Gotta have my coffee. Nice answer!');
+  answerCount++;
+} else if (favDrink === 'no'){
+  alert('Well what else am I going to drink? Water? Ha!');
+} else{
+  alert('It\'s too late to help you. Hit F5 or Ctrl + R.');
+}
 
-var guessSports = prompt('Can you guess one of my favorite sports to watch?').toLowerCase;
+confirm('Are you ready to see how you did ' + uName + '?');
+alert('It looks like you got ' + answerCount + ' out of 5 correct!');
