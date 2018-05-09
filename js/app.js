@@ -66,6 +66,6 @@ if(favDrink === 'yes'){
   alert('It\'s too late to help you. Hit F5 or Ctrl + R.');
 }
 
-// tell the user how they did on the quizmkdir 
+// tell the user how they did on the quiz
 confirm('Are you ready to see how you did ' + uName + '?');
 alert('It looks like you got ' + answerCount + ' out of 5 correct!');
