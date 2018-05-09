@@ -48,7 +48,7 @@ if(artistCount === 'yes'){
   alert('Nice job! I have seen over 100 artists in a year, and what a year it was!');
   answerCount++;
 } else if(artistCount === 'no'){
-  alert('Nope. Had one crazy year of concerts!');
+  alert('Nope. I had one crazy year of concerts!');
 } else{
   alert('I thought 3rd time would be the charm. Try yes or no next time.');
 }
