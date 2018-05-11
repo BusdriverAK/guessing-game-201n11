@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 var answerCount = 0; // variable to hold correct answer count, incremented during questions
 
 confirm('Are you ready to play a guessing game about me?');
@@ -83,3 +83,22 @@ console.log('The user has ' + answerCount + ' out of 5 correct');
 // tell the user how they did on the quiz
 confirm('Are you ready to see how you did ' + uName + '?');
 alert('It looks like you got ' + answerCount + ' out of 5 correct!');
+*/
+// have user guess how old i am
+
+var myAge =  28;
+var guessCount = 0;
+
+do{
+  var guessAge = prompt('How old do you think I am? You only get 4 tries!');
+  var intAge = parseInt(guessAge);
+  if(intAge > myAge){
+    alert('Sorry, but I\'m not that old yet.');
+    guessCount++;
+  } else if(intAge < myAge){
+    alert('Those days have passed, guess higher.');
+    guessCount++;
+  } else {
+    alert('You got it! I\' 28 years old.');
+  }
+} while(guessAge !== myAge && guessCount <=3);
