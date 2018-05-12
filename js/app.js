@@ -1,5 +1,5 @@
 'use strict';
-/*
+
 var answerCount = 0; // variable to hold correct answer count, incremented during questions
 
 confirm('Are you ready to play a guessing game about me?');
@@ -80,10 +80,6 @@ if(favDrink === 'yes'){
 }
 console.log('The user has ' + answerCount + ' out of 5 correct');
 
-// tell the user how they did on the quiz
-confirm('Are you ready to see how you did ' + uName + '?');
-alert('It looks like you got ' + answerCount + ' out of 5 correct!');
-*/
 // have user guess how old i am
 
 var myAge =  28;
@@ -100,5 +96,30 @@ do{
     guessCount++;
   } else {
     alert('You got it! I\' 28 years old.');
+    answerCount++;
   }
 } while(guessAge !== myAge && guessCount <=3);
+
+var favGames = ['dota', 'defense of the ancients', 'pubg', 'playerunknown\'s battleground', 'ssbm', 'super smash bros melee', 'witcher', 'rocket league', 'hearthstone'];
+var gameIndex = -1;
+var tryCount = 0;
+
+do{
+  var gameAnswer = prompt('Can you guess any of my favorite video games in 6 tries or less? TIP: Acronyms work.').toLowerCase();
+  for (var i=0; i < favGames.length; i++){
+    if (favGames[i] === gameAnswer){
+      gameIndex = i;
+      break;
+    }
+  }
+  if(gameIndex > -1){
+    alert('One of my favorites!');
+    answerCount++;
+  } else{
+    alert('Try Again.');
+    tryCount++;
+  }
+} while(gameIndex === -1 && tryCount <=5);
+
+confirm('Are you ready to see how you did ' + uName + '?');
+alert('It looks like you got ' + answerCount + ' out of 5 correct!');
