@@ -97,6 +97,7 @@ do{
   } else {
     alert('You got it! I\' 28 years old.');
     answerCount++;
+    break;
   }
 } while(guessAge !== myAge && guessCount <=3);
 
