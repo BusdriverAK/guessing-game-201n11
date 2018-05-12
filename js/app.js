@@ -13,6 +13,7 @@ if( uName !== null){
 }
 
 // am I from seattle
+function fromWhere(){
 var fromSeattle = prompt('Am I from Seattle?').toLowerCase();
 console.log('The user chose ' + fromSeattle);
 
@@ -25,8 +26,11 @@ if(fromSeattle === 'no'){
   alert('Please remember to answer with YES or NO');
 }
 console.log('The user has ' + answerCount + ' out of 1 correct');
+}
+fromWhere();
 
 // have I visited 10 countries
+function countryCount(){
 var visitCount = prompt('Have I visited more than 10 countries?').toLowerCase();
 console.log('The user chose ' + visitCount);
 
@@ -39,8 +43,11 @@ if(visitCount === 'yes'){
   alert('A simple yes or no will do.');
 }
 console.log('The user has ' + answerCount + ' out of 2 correct');
+}
+countryCount();
 
 // have I seen 100 artists in a year
+function artistFunc(){
 var artistCount = prompt('Have I seen over 100 artists in a single year?').toLowerCase();
 console.log('The user chose ' + artistCount);
 
@@ -53,8 +60,11 @@ if(artistCount === 'yes'){
   alert('I thought 3rd time would be the charm. Try yes or no next time.');
 }
 console.log('The user has ' + answerCount + ' out of 3 correct');
+}
+artistFunc();
 
 // do I like celery
+function celeryFunc(){
 var ewwCelery = prompt('Is celery my favorite food?').toLowerCase();
 console.log('The user chose ' + ewwCelery);
 
@@ -67,8 +77,11 @@ if(ewwCelery === 'no'){
   alert('Are you even trying? Yes or no are better answers.');
 }
 console.log('The user has ' + answerCount + ' out of 4 correct');
+}
+celeryFunc();
 
 // is coffee my favorite drink
+function drinkFunc(){
 var favDrink = prompt('Is coffee my favorite (non-alcoholic) beverage?');
 if(favDrink === 'yes'){
   alert('Gotta have my coffee. Nice answer!');
@@ -79,9 +92,11 @@ if(favDrink === 'yes'){
   alert('It\'s too late to help you. Hit F5 or Ctrl + R.');
 }
 console.log('The user has ' + answerCount + ' out of 5 correct');
+}
+drinkFunc();
 
 // have user guess how old i am
-
+function ageFunc(){
 var myAge =  28;
 var guessCount = 0;
 
@@ -100,7 +115,10 @@ do{
     break;
   }
 } while(guessAge !== myAge && guessCount <=3);
+}
+ageFunc();
 
+function gameFunc(){
 var favGames = ['dota', 'defense of the ancients', 'pubg', 'playerunknown\'s battleground', 'ssbm', 'super smash bros melee', 'witcher', 'rocket league', 'hearthstone'];
 var gameIndex = -1;
 var tryCount = 0;
@@ -121,6 +139,8 @@ do{
     tryCount++;
   }
 } while(gameIndex === -1 && tryCount <=5);
+}
+gameFunc();
 
 confirm('Are you ready to see how you did ' + uName + '?');
 alert('It looks like you got ' + answerCount + ' out of 7 correct!');
