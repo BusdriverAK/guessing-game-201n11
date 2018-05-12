@@ -123,4 +123,4 @@ do{
 } while(gameIndex === -1 && tryCount <=5);
 
 confirm('Are you ready to see how you did ' + uName + '?');
-alert('It looks like you got ' + answerCount + ' out of 5 correct!');
+alert('It looks like you got ' + answerCount + ' out of 7 correct!');
