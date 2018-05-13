@@ -1,0 +1,26 @@
+
+
+h1 {
+  font-size: 6rem;
+  text-align: center;
+  color: rgb(19, 6, 41);
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(19, 6, 41);
+}
+
+#aboutme {
+  font-size: 1.75rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-right: 55px;
+  margin-left: 55px;
+  text-align: justify;
+}
+
+.pictures {
+  border-radius:50%
+}
